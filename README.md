@@ -1,4 +1,4 @@
-# 🛒 Customer Purchase Analytics using PostgreSQL
+# 🛒 Customer Purchase Analysis
 
 An end-to-end retail analytics project focused on uncovering customer purchasing behavior, revenue patterns, product performance, and subscription trends using advanced SQL analytics techniques.
 
@@ -56,9 +56,8 @@ The project focuses on answering analytical business questions such as:
 
 ### 🔹 Tools & Technologies
 - PostgreSQL
-- pgAdmin 4
-- VS Code
-- Power BI (optional dashboarding)
+- Python
+- Power BI 
 
 ---
 
@@ -66,6 +65,11 @@ The project focuses on answering analytical business questions such as:
 
 ```bash
 Customer-Purchase-Analytics/
+│
+├── Python Analysis/
+│   ├── data_cleaning.ipynb
+│   ├── eda_analysis.ipynb
+│   ├── data_modeling.ipynb
 │
 ├── SQL Queries/
 │   ├── business_analysis_queries.sql
@@ -77,9 +81,6 @@ Customer-Purchase-Analytics/
 │
 ├── Dashboard/
 │   └── customer_analytics_dashboard.pbix
-│
-├── Screenshots/
-│   └── dashboard_preview.png
 │
 └── README.md
 ```
@@ -139,7 +140,7 @@ WHERE item_rank <= 3;
 
 # 📌 Key Insights
 
-📍 Subscribed customers generated significantly higher average revenue compared to non-subscribers.
+📍 Non-subscribed customers generated significantly higher average revenue compared to subscribers.
 
 📍 A small group of loyal customers contributed disproportionately to overall sales.
 
@@ -158,22 +159,6 @@ WHERE item_rank <= 3;
 - Query Optimization using Indexing
 - Interactive Power BI Dashboard
 - Predictive Analytics Integration
-
----
-
-# 🛠️ How to Run
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/customer-purchase-analytics-postgresql.git
-```
-
-2. Import the dataset into PostgreSQL
-
-3. Open pgAdmin Query Tool
-
-4. Execute SQL scripts from the `SQL Queries` folder
 
 ---
 
